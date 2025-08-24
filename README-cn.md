@@ -40,21 +40,15 @@
 ```
 
 ```text
-# HELP email_download_bytes_total Total bytes downloaded by each email.
-# TYPE email_download_bytes_total counter
-email_download_bytes_total{email="60fvu4mn",enable="1"} 1.247432473107e+12
-email_download_bytes_total{email="6g0ff2mh",enable="1"} 1.4792804919e+10
-email_download_bytes_total{email="jk8120as",enable="1"} 2.725568336e+09
-email_download_bytes_total{email="rda66ai2",enable="1"} 1.78623051e+08
-# HELP email_upload_bytes_total Total bytes uploaded by each email.
-# TYPE email_upload_bytes_total counter
-email_upload_bytes_total{email="60fvu4mn",enable="1"} 2.24460727439e+11
-email_upload_bytes_total{email="6g0ff2mh",enable="1"} 1.43013856e+08
-email_upload_bytes_total{email="jk8120as",enable="1"} 1.33524713e+08
-email_upload_bytes_total{email="rda66ai2",enable="1"} 4.6806666e+07
+# HELP name_traffic_download_bytes_total Total bytes downloaded by each name.
+# TYPE name_traffic_download_bytes_total counter
+name_traffic_download_bytes_total{enable="true",name="zGZuZfFc"} 1.819867959e+09
+# HELP name_traffic_upload_bytes_total Total bytes uploaded by each name.
+# TYPE name_traffic_upload_bytes_total counter
+name_traffic_upload_bytes_total{enable="true",name="zGZuZfFc"} 7.16911518e+08
 ```
 
-默认使用s-ui sqlite数据库位置为：`/etc/x-ui/x-ui.db`
+默认使用s-ui sqlite数据库位置为：`/usr/local/s-ui/db/s-ui.db`
 
 如果不在默认位置可以通过参数修改，例如`--db-path=/home/xui.db`
 
